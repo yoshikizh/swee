@@ -1,0 +1,38 @@
+#!/usr/bin/env ruby
+
+# argv = ARGV
+
+# _cmd  = argv.shift
+
+# # 简单解析命令行参数 启动服务 和 设置环境
+
+# ENV["start_port"] = "3000"
+# ENV["app_env"] = "development"
+
+# case _cmd
+# when "s"
+#   while !argv.empty?
+#     _cmd = argv.shift
+#     s = argv.shift
+#     raise "命令#{_cmd}缺少参数" if s.nil?
+#     case _cmd
+#     when "-p"
+#       ENV["start_port"] = s if s =~ /[0-9]+/
+#     when "-e"
+#       ENV["app_env"] = s if s =~ /[a-z]+/
+#     end
+#   end
+#   require 'webber'
+#   Webber::Server.boot!
+# when "c"
+#   require 'irb'
+#   require 'webber'
+
+#   IRB.start
+# else
+#   p "help"
+# end
+
+require 'webber'
+
+Webber::Engine.boot! ARGV

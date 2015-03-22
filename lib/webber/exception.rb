@@ -1,0 +1,2 @@
+class OptionsError < ArgumentError
+end

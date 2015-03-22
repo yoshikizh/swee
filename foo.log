@@ -1,0 +1,6 @@
+# Logfile created on 2015-03-16 16:15:19 +0800 by logger.rb/44203
+F, [2015-03-16T16:15:26.703959 #52866] FATAL -- : Argument 'foo' not given.
+E, [2015-03-16T16:15:58.088386 #52866] ERROR -- : Argument  mismatch.
+I, [2015-03-16T16:16:17.862107 #52866]  INFO -- initialize: Initializing...
+F, [2015-03-16T16:16:33.630080 #52866] FATAL -- : Fatal error!
+D, [2015-03-16T16:17:12.434164 #52866] DEBUG -- : This is a dddd expensive operation

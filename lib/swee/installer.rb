@@ -1,3 +1,4 @@
+# -*- encoding: utf-8 -*-
 module Swee
   module Installer
     module_function

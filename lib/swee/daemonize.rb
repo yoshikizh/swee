@@ -1,3 +1,4 @@
+# -*- encoding: utf-8 -*-
 module Daemonize
   def safefork
     tryagain = true

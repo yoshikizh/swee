@@ -1,3 +1,4 @@
+# -*- encoding: utf-8 -*-
 class Object
   def try(*a, &b)
     try!(*a, &b) if a.empty? || respond_to?(a.first)

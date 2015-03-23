@@ -1,3 +1,4 @@
+# -*- encoding: utf-8 -*-
 module Thin
 
   module VERSION #:nodoc:

@@ -1,3 +1,5 @@
+# -*- encoding: utf-8 -*-
+
 require 'swee/routes'
 describe "Swee::Routes" do
   before(:each) do

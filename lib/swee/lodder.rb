@@ -1,3 +1,4 @@
+# -*- encoding: utf-8 -*-
 module Swee
   module Lodder
     @@mtime_files_cache = {}

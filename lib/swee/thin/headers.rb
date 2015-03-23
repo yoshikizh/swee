@@ -1,3 +1,4 @@
+# -*- encoding: utf-8 -*-
 module Thin
   # Store HTTP header name-value pairs direcly to a string
   # and allow duplicated entries on some names.

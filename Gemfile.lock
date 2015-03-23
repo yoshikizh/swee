@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    swee (0.0.1)
+    swee (0.0.2)
       bundler (~> 1.7)
       rack
       rake (~> 10.0)

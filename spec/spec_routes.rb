@@ -1,7 +1,7 @@
-require 'webber/routes'
-describe "Webber::Routes" do
+require 'swee/routes'
+describe "Swee::Routes" do
   before(:each) do
-    kls = Webber::Routes
+    kls = Swee::Routes
     kls.get "/test/test_get", "test#text_get"
     kls.post "/test/test_post", "test#test_post"
     kls.match "/test/test_match", "test#test_match", via: [:get, :post]

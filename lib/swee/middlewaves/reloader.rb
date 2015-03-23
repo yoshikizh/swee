@@ -1,4 +1,4 @@
-module Webber
+module Swee
 
   class Reloader
     def initialize(app,logger)

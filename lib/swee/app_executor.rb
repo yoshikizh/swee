@@ -1,4 +1,4 @@
-module Webber
+module Swee
   class AppExecutor
 
     class << self

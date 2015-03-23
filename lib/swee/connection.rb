@@ -1,4 +1,4 @@
-module Webber
+module Swee
   class Connection < EventMachine::Connection
 
     attr_accessor :server

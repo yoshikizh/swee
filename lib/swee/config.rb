@@ -1,4 +1,4 @@
-module Webber
+module Swee
   class Config
     class BaseConfig
       def absolutely_app_path _file

@@ -1,11 +1,11 @@
 require "erb"
 
-module Webber
+module Swee
   class View
     include Helper
     def initialize controller
       @controller = controller
-      @config = Webber.config.app
+      @config = Swee.config.app
       get_binding
     end
 
@@ -26,7 +26,7 @@ module Webber
     class << self
       # 404页面
       def render_404
-        cfg = Webber.config.app
+        cfg = Swee.config.app
         body = ::ERB.new(File.read(File.expand_path(cfg["page404"], ENV["app_path"]))).result
         headers = { "Content-Type" => "text/html; charset=utf8" }
         [200,headers,[body]]

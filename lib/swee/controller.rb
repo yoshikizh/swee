@@ -1,6 +1,6 @@
 require "erb"
 
-module Webber
+module Swee
   # 过滤器
   class FilterStruct
     attr_accessor :type,:method,:actions

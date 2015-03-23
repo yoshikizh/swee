@@ -1,4 +1,4 @@
-class HomeController < Webber::Controller
+class HomeController < Swee::Controller
   before_filter :set_variable, :only => [:index]
 
   def index
@@ -6,6 +6,6 @@ class HomeController < Webber::Controller
 
   private
   def set_variable
-    @welcome = "Hello Webber"
+    @welcome = "Hello Swee"
   end
 end

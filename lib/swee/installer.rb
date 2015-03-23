@@ -1,10 +1,10 @@
-module Webber
+module Swee
   module Installer
     module_function
     def run proj_name
 
       # 打印安装信息
-      puts "--------------- Webber 安装 -----------------"
+      puts "--------------- Swee 安装 -----------------"
       proj_dir = "#{Dir.pwd}/#{proj_name}"
 
       # 创建项目目录
@@ -44,15 +44,15 @@ module Webber
 
       # 打印结束信息
       puts "恭喜,全部安装完成"
-      puts "您可以先输入: webber s 来启动服务器"
+      puts "您可以先输入: swee s 来启动服务器"
       puts "请打开config.rb 和 routes.rb 配置所需的参数"
-      puts "更多参数请输入: webber --help"
+      puts "更多参数请输入: swee --help"
       puts ">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>"
       puts "我们先启动一个欢迎页面"
       puts "浏览器输入 http://localhost:3000 来访问欢迎页面吧"
       puts "按 Ctrl + C 关闭服务"
       puts ">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>"
-      `cd #{proj_name} && webber s`
+      `cd #{proj_name} && swee s`
     end
   end
 end

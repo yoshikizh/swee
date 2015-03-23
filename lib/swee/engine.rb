@@ -7,7 +7,7 @@ require 'eventmachine'
 #File.expand_path('../../../../', __FILE__)
 ENV["app_path"] = Dir.pwd
 
-module Webber
+module Swee
   # 获取 app 路径
   def root
     ENV["app_path"]
@@ -47,7 +47,7 @@ module Webber
 
     def initialize options
       # 初始化配置
-      @config = Webber.init_config
+      @config = Swee.init_config
 
       # 读取用户配置
       require_user_appconfig
@@ -93,7 +93,7 @@ module Webber
       def parse_options
         options = {}
         OptionParser.new do |opts|
-          opts.banner = "webber框架使用参数如下"
+          opts.banner = "swee框架使用参数如下"
 
           opts.on("-p", "--port PORT", Integer,
                   "端口 (默认: 3000)") do |port|
@@ -117,7 +117,7 @@ module Webber
         when "new"
           proj_name = argv.shift
           if proj_name.nil?
-            puts "格式错误,请输入: webber new 项目名称"
+            puts "格式错误,请输入: swee new 项目名称"
             return
           end
           require_relative './installer'

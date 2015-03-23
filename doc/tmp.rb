@@ -2,7 +2,7 @@
     # attr_accessor :config
     # def initialize
     #   @port,@env = ENV["start_port"], ENV["app_env"]
-    #   @config = Webber::Application.config
+    #   @config = Swee::Application.config
     #   @middlewares = []
     # end
 

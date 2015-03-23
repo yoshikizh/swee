@@ -1,7 +1,7 @@
 require "erb"
 # require "cgi"
 
-module Webber
+module Swee
 
   module Helper
     def raw text

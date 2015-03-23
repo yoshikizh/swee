@@ -1,7 +1,7 @@
 require 'minitest/autorun'
-# require 'webber'
+# require 'swee'
 
-class WebberTest < Minitest::Test
+class SweeTest < Minitest::Test
   def test_boot
     assert_equal true, true
   end

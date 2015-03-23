@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    webber (0.0.2)
+    swee (0.0.2)
       bundler (~> 1.7)
       daemons (~> 1.0, >= 1.0.9)
       eventmachine (~> 1.0.4)
@@ -37,4 +37,4 @@ PLATFORMS
 DEPENDENCIES
   minitest
   rspec
-  webber!
+  swee!

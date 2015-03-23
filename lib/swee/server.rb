@@ -1,9 +1,9 @@
-module Webber
+module Swee
   class Server
     include Daemonize
 
     def initialize
-      @config = Webber.config
+      @config = Swee.config
       @options = @config.server
 
       @signature = nil
@@ -117,7 +117,7 @@ module Webber
       #   end
       # end
 
-      @logger = WLogger.new
+      @logger = SweeLogger.new
 
       logs.each { |_logger| @logger.addlog _logger }
     end
@@ -211,7 +211,7 @@ module Webber
       safefork && exit
 
       # 设定进程名称
-      $0 = "webber"
+      $0 = "swee"
       
       # 重新创建pid文件
       write_pid_file
@@ -221,9 +221,9 @@ module Webber
         # 简单的用异常判断 系统退出，并非其他异常 获得重启
         if $!.class == SystemExit
           p "888888"
-          @logger << "Webber服务器重启!"
+          @logger << "Swee服务器重启!"
           remove_pid_file
-          ::Webber::Engine.restart_server!
+          ::Swee::Engine.restart_server!
         end
       }
     end
@@ -252,7 +252,7 @@ module Webber
       EventMachine.epoll
       EventMachine.set_descriptor_table_size(@maximum_connections)
 
-      @logger << "正在启动webber服务器"
+      @logger << "正在启动swee服务器"
 
       EventMachine::run {
         @signature = connection
@@ -264,7 +264,7 @@ module Webber
         # 追踪重启文件
         trace_restart
 
-        puts "webber 服务器已启动, 端口:#{@listen}"
+        puts "swee 服务器已启动, 端口:#{@listen}"
       }
     end
 

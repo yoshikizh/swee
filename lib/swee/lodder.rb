@@ -1,4 +1,4 @@
-module Webber
+module Swee
   module Lodder
     @@mtime_files_cache = {}
 
@@ -31,7 +31,6 @@ module Webber
       end
     end
 
-
     def base_require
       require_relative './support'
       require_relative './config'
@@ -59,7 +58,7 @@ module Webber
       require_relative './thin/response'
 
       # server
-      require_relative './w_logger'
+      require_relative './swee_logger'
       require_relative './daemonize'
       require_relative './connection'
       require_relative './server'

@@ -1,4 +1,4 @@
-module Webber
+module Swee
   class Routes
     @@tables = {}
     class RouteStruct

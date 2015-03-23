@@ -1,4 +1,4 @@
-module Webber
+module Swee
   module ControllerFilter
     @@fliter_methods = Hash.new {|h1,k1| h1[k1] = [] }
 

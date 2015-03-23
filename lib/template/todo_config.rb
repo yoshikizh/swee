@@ -1,4 +1,4 @@
-module Webber
+module Swee
 
   # 应用配置
   app_config do |cfg|

@@ -22,17 +22,17 @@
 #       ENV["app_env"] = s if s =~ /[a-z]+/
 #     end
 #   end
-#   require 'webber'
-#   Webber::Server.boot!
+#   require 'swee'
+#   Swee::Server.boot!
 # when "c"
 #   require 'irb'
-#   require 'webber'
+#   require 'swee'
 
 #   IRB.start
 # else
 #   p "help"
 # end
 
-require 'webber'
+require 'swee'
 
-Webber::Engine.boot! ARGV
+Swee::Engine.boot! ARGV

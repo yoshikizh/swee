@@ -1,15 +1,4 @@
-module Webber
-
-  # 应用配置
-  app_config do |cfg|
-
-    # 配置 404 页面路径(相对于项目路径)
-    cfg.page404         = "./public/404.html"
-
-    # 配置 404 页面路径(相对于项目路径)
-    cfg.page500         = "./public/500.html"
-
-  end
+module Swee
 
   # 服务器配置
   server_config do |cfg|
@@ -36,6 +25,14 @@ module Webber
     # 是否后台运行(守护进程模式)
     cfg.run_background = false
     
+  end
+
+  # 应用配置
+  app_config do |cfg|
+
+    # 配置 404 页面路径(相对于项目路径)
+    cfg.page404         = "./public/404.html"
+
   end
 
 end

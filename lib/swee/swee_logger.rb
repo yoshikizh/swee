@@ -1,6 +1,6 @@
 require "fiber"
 
-class Webber::WLogger
+class Swee::SweeLogger
   def initialize
     @logs = Array.new
     @msg = Array.new

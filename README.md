@@ -15,8 +15,15 @@ Swee 是一个轻量级的 ruby web 框架, 包含一个http服务器。
 
 请使用ruby2.1.0或以上版本, 然后安装 swee 的Gem
 
-```ruby
-gem 'swee'
+```console
+gem install swee -v=0.0.1
+```
+
+bundler 安装方式
+添加以下代码到 Gemfile
+
+```console
+gem 'swee',  '~> 0.0.1'
 ```
 
 ## 使用方法

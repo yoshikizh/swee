@@ -1,12 +1,11 @@
 PATH
   remote: .
   specs:
-    swee (0.0.2)
+    swee (0.0.1)
       bundler (~> 1.7)
-      daemons (~> 1.0, >= 1.0.9)
-      eventmachine (~> 1.0.4)
       rack
       rake (~> 10.0)
+      thin
 
 GEM
   remote: https://rubygems.org/
@@ -30,6 +29,10 @@ GEM
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.2.0)
     rspec-support (3.2.2)
+    thin (1.6.3)
+      daemons (~> 1.0, >= 1.0.9)
+      eventmachine (~> 1.0)
+      rack (~> 1.0)
 
 PLATFORMS
   ruby

@@ -86,7 +86,6 @@ module Swee
 
     def all
       conditional_require
-      require "thin_parser"
       base_require
     end
   end

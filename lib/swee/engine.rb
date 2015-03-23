@@ -2,9 +2,9 @@ require 'optparse'
 require 'erb'
 require 'rack'
 require 'eventmachine'
-# require 'socket'
+require "thin_parser"
 
-#File.expand_path('../../../../', __FILE__)
+# ENV["app_path"] = File.expand_path('../../../../', __FILE__)
 ENV["app_path"] = Dir.pwd
 
 module Swee

@@ -2,6 +2,8 @@ module Swee
   class Server
     include Daemonize
 
+    attr_reader :code_reload
+
     def initialize
       @config = Swee.config
       @options = @config.server
@@ -220,7 +222,6 @@ module Swee
       at_exit{
         # 简单的用异常判断 系统退出，并非其他异常 获得重启
         if $!.class == SystemExit
-          p "888888"
           @logger << "Swee服务器重启!"
           remove_pid_file
           ::Swee::Engine.restart_server!

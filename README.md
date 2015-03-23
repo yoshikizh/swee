@@ -212,8 +212,8 @@ render方法(可省略)
 
 ## 贡献代码
 
-1. Fork it ( https://github.com/[my-github-username]/swee/fork )
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create a new Pull Request
+1. Fork 分支 ( https://github.com/yoshikizh/swee/fork )
+2. 创建你自己的分支 (`git checkout -b my-new-feature`)
+3. 并提交 (`git commit -am 'Add some feature'`)
+4. 推送到新分支 (`git push origin my-new-feature`)
+5. github上请求一个 pull request
